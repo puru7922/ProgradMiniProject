@@ -1,0 +1,135 @@
+.logo-header {
+    max-height: 100px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.business-name{
+    text-transform: capitalize;
+    color: white;
+    font-size: 2rem;
+}
+
+.hero-content-heading-wrapper{
+    background-color: rgba(0,0,0, 0.5);
+    padding: 24px;
+    backdrop-filter: blur(2px) contrast(0.5);
+}
+.hero-content-para{
+    color: white !important;
+}
+
+.hero-content-heading-1{
+    color: #fff !important;
+}
+
+.hero-content-heading-2{
+    text-transform: capitalize;
+    color: white !important;
+}
+
+.logo-footer{
+    max-height: 180px;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.service-card-heading{
+    margin: 15px 0 0 0;
+}
+
+.footer-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.footer-content-wrapper a {
+    color: white;
+}
+.footer-content-wrapper div {
+    color: white;
+}
+.social-media-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social {
+    align-self: center;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.collapse-small-screen{
+    max-width: 100%;
+}
+
+
+
+/* Flip card css  */
+
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    /* background-color: #bbb; */
+    /* color: black; */
+  }
+  
+  .flip-card-back {
+    font-size: 16px;
+    line-height: 27px;
+    background-color: #ffffff;
+    color: #454d5d;
+    transform: rotateY(180deg);
+    display: flex;
+    text-align: left;
+  }
+
+  .flip-card-back > p{
+      align-self: center;
+      padding: 20px;
+  }
+
+.areas-list > li{
+    list-style-type: disc;
+}
+
+@media (max-width:1024px) {
+    .flip-card-back{
+        font-size: 10px;
+    }
+    
+}
